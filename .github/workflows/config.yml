@@ -1,0 +1,23 @@
+name: Test Workflow
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test-work:
+    runs-on: ubuntu-lastest
+    steps:
+      - uses: actions/checkout@v2
+      - name: start test
+        run: echo "Test start"
+        shell: bash
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: good bye
+        run: echo "Goodbye"
+        shell: bash
+    
+  
