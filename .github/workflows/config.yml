@@ -3,7 +3,8 @@ name: Test Workflow
 on:
   push:
   pull_request:
-  inputs:
+  workflow_dispatch:
+    inputs:
       environment:
         description: 'Environment to deploy to'
         required: true
